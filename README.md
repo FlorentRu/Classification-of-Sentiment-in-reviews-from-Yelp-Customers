@@ -1,19 +1,29 @@
 # Academic Project: Classification-of-Sentiment-in-reviews-from-Yelp-Customers
-This repository contains a Python script for fine-tuning the BERT model for sentiment analysis using the transformers and datasets libraries from Hugging Face. The code demonstrates the end-to-end process of adapting a pre-trained BERT model for classifying sentiment in customer reviews.
+
+This repository provides a Python script for fine-tuning and comparing large language models on sentiment analysis tasks. It includes implementations for both a baseline model (BERT) and an advanced model (RoBERTa), along with a comparison of their performance against state-of-the-art (SOTA) results.
 
 ### Key Features:
-Model and Tokenizer: Utilizes bert-base-uncased as the pre-trained model and tokenizer.
-Dataset: Uses the yelp_review_full dataset, which is preprocessed to fit the model’s input requirements.
-Fine-Tuning: Configures training parameters such as learning rate, batch size, and number of epochs, and uses the Trainer class for the training loop.
-Evaluation: Evaluates model performance using accuracy as the metric, with results printed after training.
+#### Model Implementations:
 
-### Usage:
+BERT: Fine-tunes the bert-base-uncased model for sentiment analysis.
+RoBERTa: Fine-tunes the roberta-base model, providing a potentially more advanced approach.
 
-Install Dependencies: Ensure you have the necessary libraries installed:
-###### pip install transformers datasets torch
+#### Data Handling:
 
-### Run the Script: Execute the script to fine-tune the BERT model on the sentiment analysis task. The model and results will be saved in the ./results directory.
+Uses the first 10,000 reviews from the yelp_review_full dataset for both training and evaluation.
+Training and Evaluation:
 
-### Evaluate: After training, the script evaluates the model on the test set and prints the accuracy results.
+Configures training arguments including learning rate, batch size, number of epochs, and evaluation strategy.
+Implements early stopping and model checkpointing to optimize training.
+Comparison with SOTA:
 
-This script provides a straightforward example of how to fine-tune a large language model for a specific NLP task and is suitable for anyone looking to adapt pre-trained models for custom applications.
+Compares the performance of the fine-tuned models against predefined SOTA benchmarks.
+Outputs accuracy metrics and assesses whether the custom RoBERTa model outperforms existing methods.
+
+#### Run the Script:
+Execute the script to fine-tune both BERT and RoBERTa models, and evaluate their performance.
+
+#### View Results:
+The script provides a comparison of the fine-tuned models' accuracy against SOTA results, helping to assess the effectiveness of the custom model improvements.
+
+This code demonstrates how to adapt and evaluate different transformer models for sentiment analysis, offering insights into achieving better performance than traditional SOTA methods.
