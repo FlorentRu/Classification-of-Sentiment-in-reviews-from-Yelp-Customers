@@ -1,4 +1,4 @@
-# Classification-of-Sentiment-in-reviews-from-Yelp-Customers
+# Academic Project: Classification-of-Sentiment-in-reviews-from-Yelp-Customers
 This repository contains a Python script for fine-tuning the BERT model for sentiment analysis using the transformers and datasets libraries from Hugging Face. The code demonstrates the end-to-end process of adapting a pre-trained BERT model for classifying sentiment in customer reviews.
 
 ### Key Features:
