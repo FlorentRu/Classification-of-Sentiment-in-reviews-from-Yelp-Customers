@@ -10,7 +10,7 @@ RoBERTa: Fine-tunes the roberta-base model, providing a potentially more advance
 
 #### Data Handling:
 
-Uses the first 10,000 reviews from the yelp_review_full dataset for both training and evaluation.
+Uses the first 1000 reviews from the yelp_review_full dataset for both training and evaluation.
 Training and Evaluation:
 
 Configures training arguments including learning rate, batch size, number of epochs, and evaluation strategy.
