@@ -28,7 +28,7 @@ The script provides a comparison of the fine-tuned models' accuracy against SOTA
 
 This code demonstrates how to adapt and evaluate different transformer models for sentiment analysis, offering insights into achieving better performance than traditional SOTA methods.
 
-## Results:
+## Analysis of Results:
 
 The results indicate that both the fine-tuned BERT and RoBERTa models underperform significantly compared to the state-of-the-art (SOTA) accuracy of 0.85. Specifically:
 
