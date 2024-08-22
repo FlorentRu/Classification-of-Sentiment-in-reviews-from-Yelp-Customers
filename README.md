@@ -2,6 +2,8 @@
 
 This repository provides a Python script for fine-tuning and comparing large language models on sentiment analysis tasks. It includes implementations for both a baseline model (BERT) and an advanced model (RoBERTa), along with a comparison of their performance against state-of-the-art (SOTA) results.
 
+### Real-World Application: Businesses can use this model to automatically analyze customer feedback, categorize reviews into different sentiment levels, and gain insights into customer satisfaction.
+
 ### Key Features:
 #### Model Implementations:
 
